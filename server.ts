@@ -2,7 +2,7 @@ import express from "express";
 import { createServer as createViteServer } from "vite";
 import path from "path";
 import multer from "multer";
-import pdfParse from "pdf-parse";
+import { PDFParse } from "pdf-parse";
 import { GoogleGenAI, Type } from "@google/genai";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
@@ -226,7 +226,7 @@ async function startServer() {
           // Extract text from PDF
           let resumeText = "";
           try {
-            const data = await pdfParse(file.buffer);
+            const data = await new PDFParse({ data: file.buffer }).getText();
             resumeText = data.text;
             console.log(`✅ Successfully extracted text from ${file.originalname}: ${resumeText.substring(0, 100)}...`);
           } catch (parseError: any) {
