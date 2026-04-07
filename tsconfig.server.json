@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "outDir": "dist-server",
+    "allowJs": true,
+    "resolveJsonModule": true
+  },
+  "include": ["server.ts", "models.ts"]
+}

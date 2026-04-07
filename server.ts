@@ -9,7 +9,7 @@ import mongoose from "mongoose";
 import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import Groq from "groq-sdk";
-import { User, Resume, Job } from "./models.ts";
+import { User, Resume, Job } from "./models.js";
 
 dotenv.config();
 
