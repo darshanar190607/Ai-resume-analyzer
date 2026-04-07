@@ -1,0 +1,29 @@
+John Doe
+Software Engineer
+Email: john.doe@email.com | Phone: (555) 123-4567
+
+SUMMARY
+Experienced software engineer with 5+ years of experience in full-stack development, 
+specializing in React, Node.js, and cloud technologies.
+
+EXPERIENCE
+Senior Software Engineer | Tech Corp | 2020-Present
+- Developed and maintained web applications using React and Node.js
+- Led a team of 3 developers on various projects
+- Implemented CI/CD pipelines and improved deployment processes
+
+Software Engineer | StartupXYZ | 2018-2020
+- Built RESTful APIs and responsive user interfaces
+- Collaborated with cross-functional teams to deliver features
+- Optimized application performance and reduced load times by 40%
+
+EDUCATION
+Bachelor of Science in Computer Science
+University of Technology | 2014-2018
+
+SKILLS
+- Programming: JavaScript, Python, Java
+- Frontend: React, Vue.js, HTML, CSS
+- Backend: Node.js, Express, MongoDB
+- Cloud: AWS, Docker, Kubernetes
+- Tools: Git, Jenkins, Jira

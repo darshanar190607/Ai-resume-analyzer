@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-[#F8F9FA] text-gray-900 antialiased;
+  }
+}
+
+@layer utilities {
+  .bg-geometric {
+    background-color: #ffffff;
+    background-image: 
+      linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px),
+      linear-gradient(45deg, rgba(0,0,0,0.03) 1px, transparent 1px),
+      linear-gradient(-45deg, rgba(0,0,0,0.03) 1px, transparent 1px);
+    background-size: 100px 100px, 100px 100px, 141px 141px, 141px 141px;
+    background-position: center center;
+  }
+
+  .glass-card {
+    @apply bg-white border border-gray-100 shadow-sm;
+  }
+}
