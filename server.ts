@@ -48,7 +48,7 @@ const analyzeResumeWithAI = async (resumeText: string, jobDescription: string) =
 
     const gemini = new GoogleGenAI({ apiKey: geminiApiKey });
     const response = await gemini.models.generateContent({
-      model: "gemini-3-flash-preview",
+      model: "gemini-2.0-flash",
       contents: prompt,
       config: {
         responseMimeType: "application/json",
@@ -133,9 +133,13 @@ async function startServer() {
   await connectDB();
   
   const app = express();
-  const PORT = 3000;
+  const PORT = process.env.PORT ? parseInt(process.env.PORT) : 3000;
 
   app.use(express.json());
+  app.use((req, res, next) => {
+    res.setTimeout(120000);
+    next();
+  });
 
   // Database Readiness Middleware
   app.use((req, res, next) => {
