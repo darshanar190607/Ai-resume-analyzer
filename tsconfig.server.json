@@ -8,7 +8,8 @@
     "skipLibCheck": true,
     "outDir": "dist-server",
     "allowJs": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "types": ["node", "multer", "express"]
   },
   "include": ["server.ts", "models.ts"]
 }
