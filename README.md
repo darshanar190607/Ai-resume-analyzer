@@ -1,10 +1,7 @@
 
 
-# Run and deploy your AI Studio app
+# Run and deploy my ai-resume-analyzer
 
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/530560b1-cbf7-48b7-a561-bc95add81a93
 
 ## Run Locally
 
